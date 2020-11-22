@@ -22,7 +22,7 @@ sudo docker build --tag rocm .
 
 Usage 
 ```bash
-sudo docker run -it -v ./data:/data -p 1337:1337 --privileged --rm --device=/dev/kfd --device=/dev/dri --group-add video --shm-size 16gb rocm 
+sudo docker run -it -v data:/data -p 1337:1337 --privileged --rm --device=/dev/kfd --device=/dev/dri --group-add video --shm-size 16gb rocm 
 ```
 
 The ./data folder is exposed to the Docker container and is where the Jupyter lab starts from. 
